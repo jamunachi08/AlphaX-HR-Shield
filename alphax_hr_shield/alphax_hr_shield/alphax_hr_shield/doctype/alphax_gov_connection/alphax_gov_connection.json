@@ -1,0 +1,99 @@
+{
+ "actions": [],
+ "creation": "2025-01-01 00:00:00",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "connection_name",
+  "portal",
+  "enabled",
+  "environment",
+  "conn_sb",
+  "base_url",
+  "establishment_id",
+  "api_token"
+ ],
+ "fields": [
+  {
+   "fieldname": "connection_name",
+   "fieldtype": "Data",
+   "label": "Connection Name",
+   "reqd": 1,
+   "unique": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "portal",
+   "fieldtype": "Select",
+   "label": "Portal",
+   "options": "mudad\nqiwa\ngosi",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "enabled",
+   "fieldtype": "Check",
+   "label": "Enabled",
+   "default": "0",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "environment",
+   "fieldtype": "Select",
+   "label": "Environment",
+   "options": "sandbox\nproduction",
+   "default": "sandbox"
+  },
+  {
+   "fieldname": "conn_sb",
+   "fieldtype": "Section Break",
+   "label": "Credentials (issued by the authority)"
+  },
+  {
+   "fieldname": "base_url",
+   "fieldtype": "Data",
+   "label": "Official API Base URL",
+   "description": "Provided after official onboarding with the portal operator."
+  },
+  {
+   "fieldname": "establishment_id",
+   "fieldtype": "Data",
+   "label": "Establishment / Entity ID"
+  },
+  {
+   "fieldname": "api_token",
+   "fieldtype": "Password",
+   "label": "API Token / Secret"
+  }
+ ],
+ "links": [],
+ "modified": "2025-01-01 00:00:00",
+ "module": "AlphaX HR Shield",
+ "name": "AlphaX Gov Connection",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "role": "HR Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "share": 1
+  },
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "share": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "autoname": "field:connection_name"
+}

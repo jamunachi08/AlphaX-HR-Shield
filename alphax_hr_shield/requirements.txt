@@ -1,0 +1,2 @@
+# Runtime dependencies are provided by Frappe. `requests` (used by the optional
+# government-portal adapters) ships with Frappe. No extra packages required.

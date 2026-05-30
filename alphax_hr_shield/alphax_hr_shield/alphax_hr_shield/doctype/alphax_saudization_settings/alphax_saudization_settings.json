@@ -1,0 +1,122 @@
+{
+ "actions": [],
+ "creation": "2025-01-01 00:00:00",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "nat_sb",
+  "saudi_nationality_values",
+  "gcc_sb",
+  "gcc_nationalities",
+  "weight_sb",
+  "gcc_counts",
+  "gcc_factor",
+  "partial_wage_threshold",
+  "full_wage_threshold",
+  "partial_factor",
+  "bands_sb",
+  "nitaqat_bands"
+ ],
+ "fields": [
+  {
+   "fieldname": "nat_sb",
+   "fieldtype": "Section Break",
+   "label": "Nationality Classification"
+  },
+  {
+   "fieldname": "saudi_nationality_values",
+   "fieldtype": "Small Text",
+   "label": "Saudi Nationality Values (JSON array)",
+   "default": "[\"Saudi\",\"Saudi Arabia\",\"Saudi Arabian\",\"سعودي\"]"
+  },
+  {
+   "fieldname": "gcc_sb",
+   "fieldtype": "Section Break",
+   "label": "GCC Nationalities  (count toward Saudization)"
+  },
+  {
+   "fieldname": "gcc_nationalities",
+   "fieldtype": "Table",
+   "label": "GCC Nationalities",
+   "options": "AlphaX GCC Nationality"
+  },
+  {
+   "fieldname": "weight_sb",
+   "fieldtype": "Section Break",
+   "label": "Weighted Calculation"
+  },
+  {
+   "fieldname": "gcc_counts",
+   "fieldtype": "Check",
+   "label": "Count GCC nationals as Saudi",
+   "default": "1"
+  },
+  {
+   "fieldname": "gcc_factor",
+   "fieldtype": "Float",
+   "label": "GCC weight factor",
+   "default": "1.0"
+  },
+  {
+   "fieldname": "partial_wage_threshold",
+   "fieldtype": "Currency",
+   "label": "Partial-count wage threshold (SAR)",
+   "default": "3000",
+   "description": "Saudis earning at/above this but below the full threshold count partially."
+  },
+  {
+   "fieldname": "full_wage_threshold",
+   "fieldtype": "Currency",
+   "label": "Full-count wage threshold (SAR)",
+   "default": "4000",
+   "description": "Saudis earning at/above this count as 1.0."
+  },
+  {
+   "fieldname": "partial_factor",
+   "fieldtype": "Float",
+   "label": "Partial factor",
+   "default": "0.5"
+  },
+  {
+   "fieldname": "bands_sb",
+   "fieldtype": "Section Break",
+   "label": "Nitaqat Bands  (add a row per band; highest min % first)"
+  },
+  {
+   "fieldname": "nitaqat_bands",
+   "fieldtype": "Table",
+   "label": "Nitaqat Bands",
+   "options": "AlphaX Nitaqat Band"
+  }
+ ],
+ "links": [],
+ "modified": "2025-01-01 00:00:00",
+ "module": "AlphaX HR Shield",
+ "name": "AlphaX Saudization Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "role": "HR Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "share": 1
+  },
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "share": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "issingle": 1
+}

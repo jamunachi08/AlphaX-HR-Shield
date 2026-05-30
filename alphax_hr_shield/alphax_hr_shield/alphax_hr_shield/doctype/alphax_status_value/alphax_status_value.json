@@ -1,0 +1,67 @@
+{
+ "actions": [],
+ "creation": "2025-01-01 00:00:00",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "concept",
+  "value",
+  "meaning"
+ ],
+ "fields": [
+  {
+   "fieldname": "concept",
+   "fieldtype": "Select",
+   "label": "Applies To",
+   "options": "status\ncontract_status\nwork_permit_status\ninsurance_status\niqama_status\nexit_status",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "value",
+   "fieldtype": "Data",
+   "label": "Stored Value (AR/EN)",
+   "reqd": 1,
+   "in_list_view": 1,
+   "description": "e.g. ساري, active, منتهية, غير مسجل, خروج نهائي"
+  },
+  {
+   "fieldname": "meaning",
+   "fieldtype": "Select",
+   "label": "Means",
+   "options": "active\nexpired\nmissing\nnot_registered\ninactive\nfinal_exit\nexcluded",
+   "reqd": 1,
+   "in_list_view": 1
+  }
+ ],
+ "links": [],
+ "modified": "2025-01-01 00:00:00",
+ "module": "AlphaX HR Shield",
+ "name": "AlphaX Status Value",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "role": "HR Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "share": 1
+  },
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "share": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "istable": 1
+}

@@ -1,0 +1,48 @@
+{
+ "actions": [],
+ "creation": "2025-01-01 00:00:00",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "nationality"
+ ],
+ "fields": [
+  {
+   "fieldname": "nationality",
+   "fieldtype": "Data",
+   "label": "Nationality (AR/EN)",
+   "reqd": 1,
+   "in_list_view": 1
+  }
+ ],
+ "links": [],
+ "modified": "2025-01-01 00:00:00",
+ "module": "AlphaX HR Shield",
+ "name": "AlphaX GCC Nationality",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "role": "HR Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "share": 1
+  },
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "share": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "istable": 1
+}

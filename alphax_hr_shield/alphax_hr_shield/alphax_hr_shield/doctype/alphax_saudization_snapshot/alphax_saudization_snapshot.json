@@ -1,0 +1,95 @@
+{
+ "actions": [],
+ "creation": "2025-01-01 00:00:00",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "snapshot_date",
+  "company",
+  "total_headcount",
+  "saudi_headcount",
+  "gcc_headcount",
+  "headcount_percent",
+  "weighted_percent",
+  "nitaqat_band"
+ ],
+ "fields": [
+  {
+   "fieldname": "snapshot_date",
+   "fieldtype": "Date",
+   "label": "Snapshot Date",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "total_headcount",
+   "fieldtype": "Int",
+   "label": "Total Headcount",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "saudi_headcount",
+   "fieldtype": "Int",
+   "label": "Saudi Headcount"
+  },
+  {
+   "fieldname": "gcc_headcount",
+   "fieldtype": "Int",
+   "label": "GCC Headcount"
+  },
+  {
+   "fieldname": "headcount_percent",
+   "fieldtype": "Percent",
+   "label": "Headcount %"
+  },
+  {
+   "fieldname": "weighted_percent",
+   "fieldtype": "Percent",
+   "label": "Weighted %",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "nitaqat_band",
+   "fieldtype": "Data",
+   "label": "Nitaqat Band",
+   "in_list_view": 1
+  }
+ ],
+ "links": [],
+ "modified": "2025-01-01 00:00:00",
+ "module": "AlphaX HR Shield",
+ "name": "AlphaX Saudization Snapshot",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "role": "HR Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "share": 1
+  },
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "share": 1
+  }
+ ],
+ "sort_field": "snapshot_date",
+ "sort_order": "DESC",
+ "autoname": "hash"
+}

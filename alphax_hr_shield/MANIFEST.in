@@ -1,0 +1,4 @@
+include MANIFEST.in
+include requirements.txt
+include *.md *.txt
+recursive-include alphax_hr_shield *.css *.csv *.html *.js *.json *.py

@@ -1,0 +1,52 @@
+{
+ "charts": [],
+ "content": "[{\"id\": \"ax1\", \"type\": \"header\", \"data\": {\"text\": \"<span class=\\\"h4\\\">AlphaX HR Shield</span>\", \"col\": 12}}, {\"id\": \"ax2\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"AlphaX HR Dashboard\", \"col\": 3}}, {\"id\": \"ax3\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"HR Settings\", \"col\": 3}}, {\"id\": \"ax4\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"GOSI Settings\", \"col\": 3}}, {\"id\": \"ax5\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Gov Connections\", \"col\": 3}}, {\"id\": \"ax6\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Saudization Settings\", \"col\": 3}}]",
+ "creation": "2025-01-01 00:00:00",
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "shield",
+ "is_hidden": 0,
+ "label": "AlphaX HR Shield",
+ "links": [],
+ "modified": "2025-01-01 00:00:00",
+ "module": "AlphaX HR Shield",
+ "name": "AlphaX HR Shield",
+ "public": 1,
+ "roles": [],
+ "sequence_id": 50.0,
+ "shortcuts": [
+  {
+   "color": "Purple",
+   "label": "AlphaX HR Dashboard",
+   "link_to": "alphax-hr-dashboard",
+   "type": "Page"
+  },
+  {
+   "color": "Blue",
+   "label": "HR Settings",
+   "link_to": "AlphaX HR Settings",
+   "type": "DocType"
+  },
+  {
+   "color": "Green",
+   "label": "GOSI Settings",
+   "link_to": "AlphaX GOSI Settings",
+   "type": "DocType"
+  },
+  {
+   "color": "Orange",
+   "label": "Gov Connections",
+   "link_to": "AlphaX Gov Connection",
+   "type": "DocType"
+  },
+  {
+   "color": "Pink",
+   "label": "Saudization Settings",
+   "link_to": "AlphaX Saudization Settings",
+   "type": "DocType"
+  }
+ ],
+ "title": "AlphaX HR Shield"
+}

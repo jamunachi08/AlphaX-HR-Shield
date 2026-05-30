@@ -1,0 +1,130 @@
+{
+ "actions": [],
+ "creation": "2025-01-01 00:00:00",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "general_sb",
+  "global_days",
+  "economic_activity",
+  "company_size_override",
+  "map_sb",
+  "field_mappings",
+  "status_sb",
+  "status_help",
+  "status_values",
+  "thr_sb",
+  "doc_thresholds",
+  "nat_sb",
+  "saudi_nationality_values"
+ ],
+ "fields": [
+  {
+   "fieldname": "general_sb",
+   "fieldtype": "Section Break",
+   "label": "General"
+  },
+  {
+   "fieldname": "global_days",
+   "fieldtype": "Int",
+   "label": "Default Expiry Threshold (days)",
+   "default": "90",
+   "reqd": 1,
+   "description": "Used for any document type without its own row below."
+  },
+  {
+   "fieldname": "economic_activity",
+   "fieldtype": "Data",
+   "label": "Economic Activity",
+   "default": "general",
+   "description": "Free text; used to label the active Nitaqat band set."
+  },
+  {
+   "fieldname": "company_size_override",
+   "fieldtype": "Select",
+   "label": "Company Size Override",
+   "options": "\nexempt\n5-9\n10-24\n25-49\n50-499\n500+",
+   "description": "Blank = auto-detect from active headcount."
+  },
+  {
+   "fieldname": "map_sb",
+   "fieldtype": "Section Break",
+   "label": "Field Mapping  (add a row per concept → your Employee fieldname)"
+  },
+  {
+   "fieldname": "field_mappings",
+   "fieldtype": "Table",
+   "label": "Field Mappings",
+   "options": "AlphaX Field Map"
+  },
+  {
+   "fieldname": "status_sb",
+   "fieldtype": "Section Break",
+   "label": "Status Value Dictionary  (map your stored values → meaning)"
+  },
+  {
+   "fieldname": "status_help",
+   "fieldtype": "HTML",
+   "label": "status_help",
+   "options": "<div style='color:#64748b'>Add rows so the app understands your data, e.g. value <b>ساري</b> means <b>active</b>, <b>غير مسجل</b> means <b>not_registered</b>, <b>خروج نهائي</b> means <b>final_exit</b>. Arabic &amp; English both supported. Built-in defaults are seeded on install — extend as needed.</div>"
+  },
+  {
+   "fieldname": "status_values",
+   "fieldtype": "Table",
+   "label": "Status Values",
+   "options": "AlphaX Status Value"
+  },
+  {
+   "fieldname": "thr_sb",
+   "fieldtype": "Section Break",
+   "label": "Document Expiry Thresholds  (one row per document type)"
+  },
+  {
+   "fieldname": "doc_thresholds",
+   "fieldtype": "Table",
+   "label": "Document Thresholds",
+   "options": "AlphaX Doc Threshold"
+  },
+  {
+   "fieldname": "nat_sb",
+   "fieldtype": "Section Break",
+   "label": "Saudi Nationality Values"
+  },
+  {
+   "fieldname": "saudi_nationality_values",
+   "fieldtype": "Small Text",
+   "label": "Saudi Nationality Values (JSON array)",
+   "default": "[\"Saudi\",\"Saudi Arabia\",\"Saudi Arabian\",\"سعودي\"]"
+  }
+ ],
+ "links": [],
+ "modified": "2025-01-01 00:00:00",
+ "module": "AlphaX HR Shield",
+ "name": "AlphaX HR Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "role": "HR Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "share": 1
+  },
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "share": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "issingle": 1
+}

@@ -1,0 +1,87 @@
+{
+ "actions": [],
+ "creation": "2025-01-01 00:00:00",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "wage_sb",
+  "wage_floor",
+  "wage_ceiling",
+  "use_ctc_fallback",
+  "rates_sb",
+  "rates_help",
+  "gosi_rates"
+ ],
+ "fields": [
+  {
+   "fieldname": "wage_sb",
+   "fieldtype": "Section Break",
+   "label": "Contributory Wage"
+  },
+  {
+   "fieldname": "wage_floor",
+   "fieldtype": "Currency",
+   "label": "Wage Floor (SAR)",
+   "default": "1500"
+  },
+  {
+   "fieldname": "wage_ceiling",
+   "fieldtype": "Currency",
+   "label": "Wage Ceiling (SAR)",
+   "default": "45000"
+  },
+  {
+   "fieldname": "use_ctc_fallback",
+   "fieldtype": "Check",
+   "label": "Use CTC as wage fallback",
+   "default": "0"
+  },
+  {
+   "fieldname": "rates_sb",
+   "fieldtype": "Section Break",
+   "label": "Contribution Rates  (add a row per nationality group)"
+  },
+  {
+   "fieldname": "rates_help",
+   "fieldtype": "HTML",
+   "label": "rates_help",
+   "options": "<div style='color:#64748b'>Rates differ for Saudi vs non-Saudi and rise 0.5%/yr through 2028 for new entrants under the New Social Insurance Law. Defaults reflect the 2026 schedule — add/edit rows to match the official GOSI schedule for your workforce.</div>"
+  },
+  {
+   "fieldname": "gosi_rates",
+   "fieldtype": "Table",
+   "label": "GOSI Rates",
+   "options": "AlphaX GOSI Rate"
+  }
+ ],
+ "links": [],
+ "modified": "2025-01-01 00:00:00",
+ "module": "AlphaX HR Shield",
+ "name": "AlphaX GOSI Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "role": "HR Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "share": 1
+  },
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "share": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "issingle": 1
+}

@@ -1,0 +1,117 @@
+{
+ "actions": [],
+ "creation": "2025-01-01 00:00:00",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "rule_name",
+  "enabled",
+  "trigger_statuses",
+  "doc_types",
+  "delivery_sb",
+  "email_to",
+  "webhook_url",
+  "schedule_sb",
+  "schedule_hour",
+  "last_triggered_at",
+  "last_result_summary"
+ ],
+ "fields": [
+  {
+   "fieldname": "rule_name",
+   "fieldtype": "Data",
+   "label": "Rule Name",
+   "reqd": 1,
+   "unique": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "enabled",
+   "fieldtype": "Check",
+   "label": "Enabled",
+   "default": "1",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "trigger_statuses",
+   "fieldtype": "Data",
+   "label": "Trigger Statuses (comma-separated)",
+   "default": "expired,critical",
+   "description": "Any of: expired, critical, warning"
+  },
+  {
+   "fieldname": "doc_types",
+   "fieldtype": "Data",
+   "label": "Document Types (blank = all)",
+   "description": "e.g. national_id,passport"
+  },
+  {
+   "fieldname": "delivery_sb",
+   "fieldtype": "Section Break",
+   "label": "Delivery"
+  },
+  {
+   "fieldname": "email_to",
+   "fieldtype": "Data",
+   "label": "Email To (comma-separated)"
+  },
+  {
+   "fieldname": "webhook_url",
+   "fieldtype": "Data",
+   "label": "Webhook URL"
+  },
+  {
+   "fieldname": "schedule_sb",
+   "fieldtype": "Section Break",
+   "label": "Schedule"
+  },
+  {
+   "fieldname": "schedule_hour",
+   "fieldtype": "Int",
+   "label": "Run At Hour (0-23)",
+   "default": "8"
+  },
+  {
+   "fieldname": "last_triggered_at",
+   "fieldtype": "Datetime",
+   "label": "Last Triggered At",
+   "read_only": 1
+  },
+  {
+   "fieldname": "last_result_summary",
+   "fieldtype": "Small Text",
+   "label": "Last Result",
+   "read_only": 1
+  }
+ ],
+ "links": [],
+ "modified": "2025-01-01 00:00:00",
+ "module": "AlphaX HR Shield",
+ "name": "AlphaX Alert Rule",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "role": "HR Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "share": 1
+  },
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "share": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "autoname": "field:rule_name"
+}

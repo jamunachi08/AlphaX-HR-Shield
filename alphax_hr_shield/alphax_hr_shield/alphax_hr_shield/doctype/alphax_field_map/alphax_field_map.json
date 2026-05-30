@@ -1,0 +1,58 @@
+{
+ "actions": [],
+ "creation": "2025-01-01 00:00:00",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "concept",
+  "employee_fieldname"
+ ],
+ "fields": [
+  {
+   "fieldname": "concept",
+   "fieldtype": "Select",
+   "label": "Concept",
+   "options": "status\nnationality\ncontract_status\nwork_permit_status\nwork_permit_expiry\ninsurance_status\niqama_status\nexit_status\nnational_id\nnational_id_expiry\npassport_number\npassport_expiry\nhealth_insurance_no\ncustom_identity_no\ncustom_identity_expiry\nbasic_salary\nhousing_allowance\ndepartment\ndesignation",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "employee_fieldname",
+   "fieldtype": "Data",
+   "label": "Employee Fieldname",
+   "reqd": 1,
+   "in_list_view": 1,
+   "description": "Exact fieldname on the Employee doctype"
+  }
+ ],
+ "links": [],
+ "modified": "2025-01-01 00:00:00",
+ "module": "AlphaX HR Shield",
+ "name": "AlphaX Field Map",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "role": "HR Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "share": 1
+  },
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "share": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "istable": 1
+}

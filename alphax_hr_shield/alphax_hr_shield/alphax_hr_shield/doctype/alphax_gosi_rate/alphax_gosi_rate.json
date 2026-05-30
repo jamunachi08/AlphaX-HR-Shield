@@ -1,0 +1,69 @@
+{
+ "actions": [],
+ "creation": "2025-01-01 00:00:00",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "nationality_group",
+  "employee_rate",
+  "employer_rate",
+  "note"
+ ],
+ "fields": [
+  {
+   "fieldname": "nationality_group",
+   "fieldtype": "Select",
+   "label": "Nationality Group",
+   "options": "Saudi\nGCC\nNon-GCC",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "employee_rate",
+   "fieldtype": "Float",
+   "label": "Employee Rate %",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "employer_rate",
+   "fieldtype": "Float",
+   "label": "Employer Rate %",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "note",
+   "fieldtype": "Data",
+   "label": "Note"
+  }
+ ],
+ "links": [],
+ "modified": "2025-01-01 00:00:00",
+ "module": "AlphaX HR Shield",
+ "name": "AlphaX GOSI Rate",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "role": "HR Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "share": 1
+  },
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "share": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "istable": 1
+}
